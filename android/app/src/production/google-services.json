@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "607799151662",
+    "project_id": "al-quran-app-89175",
+    "storage_bucket": "al-quran-app-89175.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607799151662:android:ace1219b45ef34e93ba3bf",
+        "android_client_info": {
+          "package_name": "com.alquran.app.alquran_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607799151662-0r0m4gtenplbstf1l293pfsua72ab4o6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alquran.app.alquran_app",
+            "certificate_hash": "1e78000ddd7aa0a92f5d7ed2d5143d14b946b64f"
+          }
+        },
+        {
+          "client_id": "607799151662-2ngofid126cv5qnrcr0bg3calrnoolhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn28SaTAYeSVFtHZI92xjl6XJM0m6SoGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607799151662-2ngofid126cv5qnrcr0bg3calrnoolhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607799151662:android:3241c80297ece8f03ba3bf",
+        "android_client_info": {
+          "package_name": "com.alquran.app.alquran_app.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607799151662-e8lh32cpcd9b7cbkfpb0j9oqdt1d10dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alquran.app.alquran_app.dev",
+            "certificate_hash": "1e78000ddd7aa0a92f5d7ed2d5143d14b946b64f"
+          }
+        },
+        {
+          "client_id": "607799151662-2ngofid126cv5qnrcr0bg3calrnoolhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn28SaTAYeSVFtHZI92xjl6XJM0m6SoGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607799151662-2ngofid126cv5qnrcr0bg3calrnoolhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
