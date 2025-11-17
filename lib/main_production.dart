@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:alquran_app/app/app.dart';
 import 'package:alquran_app/bootstrap.dart';
@@ -13,8 +14,8 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  FlutterError.onError = (errorDetails) {
-    FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+  FlutterError.onError = (errorDetails) async {
+    await FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
   };
 
   await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
@@ -22,7 +23,9 @@ Future<void> main() async {
   // that aren't handled by the Flutter framework
   // to Crashlytics.
   PlatformDispatcher.instance.onError = (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    unawaited(
+      FirebaseCrashlytics.instance.recordError(error, stack, fatal: true),
+    );
     return true;
   };
   await bootstrap(() => const App());
