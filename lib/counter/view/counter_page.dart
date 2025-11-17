@@ -1,6 +1,5 @@
 import 'package:alquran_app/counter/counter.dart';
 import 'package:alquran_app/l10n/l10n.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -37,13 +36,6 @@ class CounterView extends StatelessWidget {
           FloatingActionButton(
             onPressed: () => context.read<CounterCubit>().decrement(),
             child: const Icon(Icons.remove),
-          ),
-          const SizedBox(height: 8),
-          FloatingActionButton(
-            onPressed: () {
-              FirebaseCrashlytics.instance.crash();
-            },
-            child: const Icon(Icons.warning),
           ),
         ],
       ),
